@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>YOUR NAME</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a B.Tech CSE-DS student at JSS University, Noida, interested in web development and data science.</p>
+    <a class="btn" href="#projects">View Projects</a>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>C/C++</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <article class="card"><h3>To-Do List</h3><p>JavaScript task manager.</p></article>
+      <article class="card"><h3>Weather App</h3><p>Fetch API weather dashboard.</p></article>
+      <article class="card"><h3>Notes App</h3><p>React CRUD notes app.</p></article>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="n">Name</label>
+      <input id="n" type="text" required>
+      <label for="e">Email</label>
+      <input id="e" type="email" required>
+      <label for="m">Message</label>
+      <textarea id="m" rows="4" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+</main>
+<footer><p>&copy; 2026 YOUR NAME</p></footer>
+</body>
+</html>
+
+
+
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#222;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;
+  padding:15px 30px;background:#0b3d91;color:#fff;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin-left:20px;padding:5px 8px;border-radius:4px}
+nav a:hover{background:#fff;color:#0b3d91}
+section{padding:50px 30px;max-width:900px;margin:auto}
+h2{color:#0b3d91;margin-bottom:15px}
+.btn{display:inline-block;margin-top:12px;padding:10px 20px;background:#0b3d91;
+  color:#fff;border:none;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#1e63d6}
+.skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.skills li{background:#e8f0fe;padding:8px 16px;border-radius:20px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{flex:1 1 200px;border:1px solid #ccc;border-radius:8px;padding:20px}
+.card:hover{box-shadow:0 4px 12px rgba(0,0,0,.2)}
+form{display:flex;flex-direction:column;gap:8px}
+input,textarea{padding:8px;border:1px solid #aaa;border-radius:4px}
+footer{text-align:center;padding:15px;background:#0b3d91;color:#fff}
+@media(max-width:600px){
+  header{flex-direction:column}
+  nav a{margin:5px}
+}

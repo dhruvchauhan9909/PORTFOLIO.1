@@ -1,0 +1,24 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#222;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;
+  padding:15px 30px;background:#0b3d91;color:#fff;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin-left:20px;padding:5px 8px;border-radius:4px}
+nav a:hover{background:#fff;color:#0b3d91}
+section{padding:50px 30px;max-width:900px;margin:auto}
+h2{color:#0b3d91;margin-bottom:15px}
+.btn{display:inline-block;margin-top:12px;padding:10px 20px;background:#0b3d91;
+  color:#fff;border:none;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn:hover{background:#1e63d6}
+.skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.skills li{background:#e8f0fe;padding:8px 16px;border-radius:20px}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{flex:1 1 200px;border:1px solid #ccc;border-radius:8px;padding:20px}
+.card:hover{box-shadow:0 4px 12px rgba(0,0,0,.2)}
+form{display:flex;flex-direction:column;gap:8px}
+input,textarea{padding:8px;border:1px solid #aaa;border-radius:4px}
+footer{text-align:center;padding:15px;background:#0b3d91;color:#fff}
+@media(max-width:600px){
+  header{flex-direction:column}
+  nav a{margin:5px}
+}
